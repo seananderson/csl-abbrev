@@ -6,8 +6,30 @@ For example, this could be useful for [Pandoc][] where you can specify the
 abbreviation file with:
 
 ```
-pandoc --citation-abbreviations=csl-abbrev.json --csl=my-journal.csl paper.md -o paper.pdf
+pandoc --citation-abbreviations=csl-abbrev.json --csl=my-journal.csl --bibliography=refs.bib paper.md -o paper.pdf
 ```
+
+And your file `refs.bib` might contain something like this:
+
+
+```tex
+@article{anderson2011,
+  Author = {Sean C Anderson AND Joanna Mills Flemming AND Reg Watson AND Heike K Lotze},
+  Journal = {Fish and Fisheries},
+  Number = {3},
+  Pages = {317--339},
+  Title = {Serial exploitation of global sea cucumber fisheries},
+  Volume = {12},
+  Year = {2011}}
+```
+
+Then if your `.csl` file specifies abbreviated journals, your final reference will turn into:
+
+> Anderson, S.C., J. Mills Flemming, R. Watson, H.K. Lotze. Serial
+> exploitation of global sea cucumber fisheries. **Fish Fish.**
+> 12(3): 317-339.
+
+(Emphasis added to show the abbreviation.)
 
 I gathered the original journal abbreviations from three sources: 
 
@@ -18,7 +40,7 @@ I gathered the original journal abbreviations from three sources:
 
 You may find the following files useful:  
 
-- `csl-abbrev.json`: The end goal of this repository --- a CSL JSON
+- `csl-abbrev.json`: The end goal of this repository -- a CSL JSON
    abbreviation file.
 - `make.r`: The quick script I whipped up in R to create the `csl-abbrev.json`
    file.
