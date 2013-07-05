@@ -25,7 +25,7 @@ And your file `refs.bib` might contain something like this:
 
 Then if your `.csl` file specifies abbreviated journals, your final reference will turn into:
 
-> Anderson, S.C., J. Mills Flemming, R. Watson, H.K. Lotze. Serial
+> Anderson, S.C., J. Mills Flemming, R. Watson, H.K. Lotze. 2011. Serial
 > exploitation of global sea cucumber fisheries. **Fish Fish.**
 > 12(3): 317-339.
 
