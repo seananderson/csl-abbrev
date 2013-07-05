@@ -40,7 +40,7 @@ I gathered the original journal abbreviations from three sources:
 
 You may find the following files useful:  
 
-- `csl-abbrev.json`: The end goal of this repository -- a CSL JSON
+- `csl-abbrev.json`: The end goal of this repository — a CSL JSON
    abbreviation file.
 - `make.r`: The quick script I whipped up in R to create the `csl-abbrev.json`
    file.
