@@ -1587,7 +1587,6 @@
 "Ecology": "Ecology",
 "Ecology and Society": "Ecol. Soc.",
 "Ecology Letters": "Ecol. Lett.",
-"Ecology Letters": "Ecol. Let.",
 "Ecology of Food & Nutrition": "Ecol. Food Nutr.",
 "Economics Bulletin": "Econ. Bull.",
 "Ecosystem Health": "Ecosys. Health",
