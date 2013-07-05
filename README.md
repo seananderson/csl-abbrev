@@ -1,6 +1,6 @@
-Here I am creating an [abbreviation JSON][zotero] file for use with CSL
-bibliography styles. It covers most journals from the fields of biology,
-medicine, ecology, and fisheries.
+Here I am creating an [abbreviation JSON][zotero] file for use with Citation
+Style Language (CSL) bibliography styles. It covers most journals from the
+fields of biology, medicine, ecology, and fisheries.
 
 For example, this could be useful for [Pandoc][] where you can specify the
 abbreviation file with:
@@ -32,7 +32,8 @@ reference list, so I didn't spend time on this. If you'd like to fork the
 repository and write the regular expressions to make this work, please feel
 free. (And let me know!)
 
-If you have problems or additions, please contact me at sean "at" seananderson.ca.
+If you have problems or additions, please contact me at sean "at"
+seananderson.ca or file a GitHub issue.
 
 [Pandoc]: http://johnmacfarlane.net/pandoc/index.html
 [zotero]: http://citationstylist.org/2011/10/19/abbreviations-for-zotero-test-release/
