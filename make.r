@@ -1,5 +1,5 @@
-js <- readLines("~/Dropbox/tex/jshort.bib")
-jl <- readLines("~/Dropbox/tex/jlong.bib")
+js <- readLines("jshort.bib")
+jl <- readLines("jlong.bib")
 
 f <- function(x) {
   regex <- "@string\\{([a-zA-Z0-9\\:\\/\\-\\.\\']+) =[\\\ \\{\\\"]*([A-Za-z0-9\\/\\(\\)\\;\\\\ \\&\\:\\,\\.\\[\\]\\-\\']+)[\\}\\\"]+\\}"
@@ -49,7 +49,6 @@ o <- paste0("\"", ab$l, "\": \"", ab$s, "\",")
 
 # remove comma from last row:
 o[length(o)] <- gsub(",", "", o[length(o)])
-
 
 write.table(o, file = "abb.txt", row.names = FALSE, quote = FALSE, col.names = FALSE)
 system("cat header.txt abb.txt tail.txt > jabbrev.json")
